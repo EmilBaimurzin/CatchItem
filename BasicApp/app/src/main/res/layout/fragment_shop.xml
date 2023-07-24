@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_game"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.item.game.core.library.CustomImageButton
+        android:id="@+id/home_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/button_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        style="@style/BasicText"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_balance"
+        android:paddingTop="3dp"
+        android:paddingEnd="30dp"
+        android:textColor="#FFD700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22220" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shop1"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:background="@drawable/bg_shop"
+        app:layout_constraintBottom_toTopOf="@+id/hor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <ImageView
+            android:id="@+id/symbol5Img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_symbols05"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/symbol6Img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/symbol6Img"
+            android:src="@drawable/img_symbols06"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/symbol7Img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/img_symbols07"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/symbol6Img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol5Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price1000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol5Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol5Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol5Img" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol6Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price1000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol6Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol6Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol5Img" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol7Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price1000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol7Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol7Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol5Img" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vibroLayout"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:background="@drawable/bg_shop"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hor">
+
+        <ImageView
+            android:id="@+id/symbol8Img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/img_symbols08"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/symbol9Img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/symbol9Img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_symbols09"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/symbol10Img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/img_symbols10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/symbol9Img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol8Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price10000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol8Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol8Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol8Img" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol9Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price10000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol9Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol9Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol9Img" />
+
+        <com.item.game.core.library.CustomImageButton
+            android:id="@+id/symbol10Button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/button_price10000"
+            app:layout_constraintEnd_toEndOf="@+id/symbol10Img"
+            app:layout_constraintStart_toStartOf="@+id/symbol10Img"
+            app:layout_constraintTop_toBottomOf="@+id/symbol10Img" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

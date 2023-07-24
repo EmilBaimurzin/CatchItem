@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game">
+
+    <FrameLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/heartsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.item.game.core.library.CustomImageButton
+        android:id="@+id/home_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/button_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        style="@style/BasicText"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_balance"
+        android:paddingTop="3dp"
+        android:paddingEnd="30dp"
+        android:textColor="#FFD700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22220" />
+
+    <LinearLayout
+        android:id="@+id/livesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/home_button"
+        app:layout_constraintEnd_toStartOf="@+id/balanceTextView"
+        app:layout_constraintStart_toEndOf="@+id/home_button"
+        app:layout_constraintTop_toTopOf="@+id/home_button" />
+
+    <TextView
+        android:id="@+id/timeText"
+        style="@style/BasicText"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceTextView"
+        tools:text="22:20" />
+
+    <FrameLayout
+        android:id="@+id/cart2Layout"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="7.5dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/img_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical">
+
+        <ImageView
+            android:id="@+id/cart2Img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cart1Layout"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/img_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cart2Layout">
+
+        <ImageView
+            android:id="@+id/cart1Img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cart3Layout"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/img_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical">
+
+        <ImageView
+            android:id="@+id/cart3Img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cart4Layout"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/img_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cart3Layout">
+
+        <ImageView
+            android:id="@+id/cart4Img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/sticksView"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_sticks"
+        app:layout_constraintBottom_toTopOf="@+id/cart1Layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
